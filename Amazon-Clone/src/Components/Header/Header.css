@@ -89,22 +89,14 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow */
   }
   
-  /* Logo */
-  .header__logo {
-    width: 100px; /* Adjust size as needed */
-  }
+
   
   .header__logo img {
     width: 100%; /* Ensures the logo is responsive */
     height: auto;
   }
   
-  /* Navigation links */
-  .header__nav {
-    display: flex;
-    gap: 20px; /* Space between navigation links */
-  }
-  
+
   .header__nav a {
     color: #ffffff; /* White text color */
     text-decoration: none; /* Remove underline */
@@ -112,10 +104,7 @@
     font-weight: 500; /* Slightly bold */
     transition: color 0.3s; /* Smooth hover effect */
   }
-  
-  .header__nav a:hover {
-    color: #e50914; /* Netflix red on hover */
-  }
+ 
   
   /* Mobile responsiveness */
   @media (max-width: 768px) {
