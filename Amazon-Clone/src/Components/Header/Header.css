@@ -1,0 +1,133 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .header__logo {
+    width: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+  }
+  
+  .header__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .header__searchInput {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .header__searchIcon {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    color: white;
+  }
+  
+  .header__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .header__optionLineOne {
+    font-size: 10px;
+  }
+  
+  .header__optionLineTwo {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  
+  .header__optionBasket {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__basketIcon {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .header__basketCount {
+    color: #f08804;
+    font-weight: 800;
+  }
+  
+  /* General styles for the header */
+.header {
+    position: fixed; /* Keeps the header fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Vertically center items */
+    background-color: #141414; /* Netflix-style dark background */
+    padding: 10px 20px; /* Spacing inside the header */
+    z-index: 1000; /* Ensures it stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow */
+  }
+  
+  /* Logo */
+  .header__logo {
+    width: 100px; /* Adjust size as needed */
+  }
+  
+  .header__logo img {
+    width: 100%; /* Ensures the logo is responsive */
+    height: auto;
+  }
+  
+  /* Navigation links */
+  .header__nav {
+    display: flex;
+    gap: 20px; /* Space between navigation links */
+  }
+  
+  .header__nav a {
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Text size */
+    font-weight: 500; /* Slightly bold */
+    transition: color 0.3s; /* Smooth hover effect */
+  }
+  
+  .header__nav a:hover {
+    color: #e50914; /* Netflix red on hover */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: flex-start; /* Align items to the start */
+      padding: 15px;
+    }
+  
+    .header__nav {
+      width: 100%; /* Full width */
+      justify-content: space-around; /* Spread out navigation items */
+    }
+  }
+  
